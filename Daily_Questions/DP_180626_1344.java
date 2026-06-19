@@ -1,7 +1,11 @@
 //Daily Question : 18/06/26
 //1344. Angle Between Hands of a Clock
-//Approach: 1.  formulae for angle between hour and minute hand is modulus|30*hour-5.5*minutes|
-//          2.  if angle is greater than 180 then we need to subtract it from 360
+//Approach-1: 1.  formulae for angle between hour and minute hand is modulus|30*hour-5.5*minutes|
+//            2.  if angle is greater than 180 then we need to subtract it from 360
+
+//Approach-2: 1.  find angle made by hour hand with 12 o'clock => (30*hour + 0.5*minutes)*30 
+//            2.  find angle made by minute hand with 12 o'clock => (6*minutes)*6
+//            3.  find the difference between the two angles and if it is greater than 180 then we need to subtract it from 360
 
 package Daily_Questions;
 
